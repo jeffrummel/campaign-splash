@@ -1,0 +1,149 @@
+@mixin marqFlex {
+  display: flex;
+  flex-flow:column nowrap;
+}
+@mixin marqGrid {
+  display: grid;
+}
+@mixin marq01 {
+  @include marqFlex;
+  justify-content: center;
+  align-items: flex-start;
+  &__hed,
+  &__dek {
+  }
+  @media screen and (min-width:700px) and (max-width:960px) {
+    grid-column: 2 / span 4;
+  }
+  @media screen and (min-width:960px) {
+    grid-column: 2 / span 6;
+  }
+}
+@mixin marq02 {
+  @include marqFlex;
+  justify-content: center;
+  align-items: flex-start;
+  &__hed,
+  &__dek {
+  }
+  @media screen and (min-width:700px) and (max-width:960px) {
+    grid-column: 6 / span 4;
+  }
+  @media screen and (min-width:960px) {
+    grid-column: 8 / span 6;
+  }
+}
+@mixin marq03 {
+  @include marqFlex;
+  justify-content: center;
+  align-items: center;
+  &__hed,
+  &__dek {
+    text-align:center;
+  }
+  @media screen and (min-width:700px) and (max-width:960px) {
+    grid-column: 4 / span 4;
+  }
+  @media screen and (min-width:960px) {
+    grid-column: 5 / span 6;
+  }
+}
+@mixin marq04 {
+  @include marqFlex;
+  justify-content: center;
+  align-items: flex-start;
+  &__hed,
+  &__dek {
+  }
+  @media screen and (min-width:700px) and (max-width:960px) {
+    grid-column: 6 / span 4;
+  }
+  @media screen and (min-width:960px) {
+    grid-column: 10 / span 4;
+  }
+}
+
+@mixin marq05 {
+  @include marqFlex;
+  justify-content: center;
+  align-items: flex-start;
+  &__hed,
+  &__dek {
+  }
+  @media screen and (min-width:700px) and (max-width:960px) {
+    grid-column: 4 / span 6;
+  }
+  @media screen and (min-width:960px) {
+    grid-column: 5 / span 9;
+  }
+}
+@mixin marq06 {
+  @include marqFlex;
+  justify-content: center;
+  align-items: flex-start;
+  &__hed,
+  &__dek {
+  }
+  @media screen and (min-width:700px) and (max-width:960px) {
+    grid-column: 2 / span 6;
+  }
+  @media screen and (min-width:960px) {
+    grid-column: 2 / span 9;
+  }
+}
+@mixin marq07 {
+  @include marqFlex;
+  justify-content: center;
+  align-items: flex-start;
+  &__hed,
+  &__dek {
+  }
+  @media screen and (min-width:700px) and (max-width:960px) {
+    grid-column: 2 / span 5;
+  }
+  @media screen and (min-width:960px) {
+    grid-column: 2 / span 4;
+  }
+}
+@mixin marq08 {
+  @media screen and (min-width:700px) {
+    @include marqGrid;
+    justify-items: stretch;
+    align-items: start;  
+    grid-template-rows: 1fr auto auto;
+    &__hed {
+      grid-row:2 / span 2;
+    }
+    &__dek {
+      grid-row:2 / span 1;
+  
+    }
+    &__form {
+      grid-row: 3 / span 1;
+    }
+    }
+  @media screen and (min-width:700px) and (max-width:960px) {
+    grid-column: 2 / span 8;
+    grid-template-columns:minmax(250px, 764px) minmax(264px, 478px);
+    grid-column-gap: 16px;
+  }
+  @media screen and (min-width:960px) {
+    grid-column: 2 / span 12;
+    grid-template-columns:minmax(568px, 764px) minmax(340px, 448px);
+    grid-column-gap: 36px;
+  }
+}
+@mixin marq09 {
+  @include marqFlex;
+  justify-content: center;
+  align-items: flex-start;
+  &__hed,
+  &__dek {
+  }
+  @media screen and (min-width:700px) and (max-width:960px) {
+    grid-column: 2 / span 3;
+  }
+  @media screen and (min-width:960px) {
+    grid-column: 2 / span 5;
+  }
+}

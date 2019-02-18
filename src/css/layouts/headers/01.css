@@ -1,0 +1,45 @@
+.hed {
+  display: flex;
+  flex-flow:row wrap;
+  justify-content:space-between;
+  align-items: stretch;
+  &__logo {
+    max-width: 158px;
+    &--title {
+      @extend clipIt;
+    }
+    &--grfx {
+
+    }
+  }
+  &__menu {
+    cursor:pointer;
+    flex:0 1 auto;
+    &--text {
+      @extend clipIt;
+    }
+    &--icon {
+      width:42px;
+    }
+  }
+  &__nav {
+    flex:0 0 100%;
+    order:-1;
+    justify-self:flex-end;
+    outline:1px dotted salmon;
+    &.primary {}
+    &.secondary {}
+  }
+  @media screen and (min-width:960px) {
+    &__logo {
+      max-width:305px;
+    }
+    &__menu {
+      display:none;
+    }
+    &__nav {
+      order:0;
+      flex:1 1 50%;
+    }
+  }
+}

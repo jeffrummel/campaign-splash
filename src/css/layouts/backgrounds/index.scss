@@ -1,0 +1,93 @@
+@mixin marq01 {
+  @media screen and (min-width:700px) and (max-width:960px) {
+    grid-column: 1 / span 5;
+    margin-right:-16px;
+  }
+  @media screen and (min-width:960px) {
+    grid-column: 1 / span 7;
+    margin-right:-36px;
+  }
+}
+@mixin marq02 {
+  @media screen and (min-width:700px) and (max-width:960px) {
+    grid-column: 6 / span 5;
+    margin-left:-16px;
+  }
+  @media screen and (min-width:960px) {
+    grid-column: 8 / span 7;
+    margin-left:-36px;
+  }
+}
+@mixin marq03 {
+  @media screen and (min-width:700px) and (max-width:960px) {
+    grid-column: 1 / -1;
+    margin-left:-16px;
+  }
+  @media screen and (min-width:960px) {
+    grid-column: 1 / -1;
+    margin-left:-36px;
+  }
+}
+@mixin marq04 {
+  @media screen and (min-width:700px) and (max-width:960px) {
+    grid-column: 6 / span 5;
+    margin-left:-16px;
+  }
+  @media screen and (min-width:960px) {
+    grid-column: 10 / span 5;
+    margin-left:-36px;
+  }
+}
+
+@mixin marq05 {
+  @media screen and (min-width:700px) and (max-width:960px) {
+    grid-column: 4 / span 7;
+    margin-left:-16px;
+  }
+  @media screen and (min-width:960px) {
+    grid-column: 5 / span 10;
+    margin-left:-36px;
+  }
+}
+@mixin marq06 {
+  @media screen and (min-width:700px) and (max-width:960px) {
+    grid-column: 1 / span 7;
+    margin-right:-16px;
+  }
+  @media screen and (min-width:960px) {
+    grid-column: 1 / 11;
+    margin-right:-36px;
+  }
+}
+@mixin marq07 {
+  @media screen and (min-width:700px) and (max-width:960px) {
+    grid-column: 1 / span 6;
+    margin-right:-16px;
+  }
+  @media screen and (min-width:960px) {
+    grid-column: 1 / span 5;
+    margin-right:-36px;
+  }
+}
+@mixin marq08 {
+  @media screen and (min-width:700px) {
+  }
+  @media screen and (min-width:700px) and (max-width:960px) {
+    grid-column: 6 / span 5;
+    margin-left:-16px;
+  }
+  @media screen and (min-width:960px) {
+    grid-column: 9 / span 6;
+    margin-left:-36px;
+  }
+}
+@mixin marq09 {
+  @media screen and (min-width:700px) and (max-width:960px) {
+    grid-column: 1 / span 4;
+    margin-right:-16px;
+  }
+  @media screen and (min-width:960px) {
+    grid-column: 1 / span 6;
+    margin-right:-36px;
+  }
+}

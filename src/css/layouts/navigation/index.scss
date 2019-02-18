@@ -1,0 +1,576 @@
+%nav {
+  &__primary {}
+  &__secondary {}
+  @media screen and (min-width:700px) {
+  }
+  @media screen and (min-width:700px) and (max-width:960px) {
+  }
+  @media screen and (min-width:960px) {
+  }
+}
+@mixin hed01 {
+  flex-flow:column wrap;
+  align-items: center;
+  &.visible {
+    height:auto;
+    min-height:100vh;
+    position: absolute;
+    left:0;
+    right: 0;
+    background:$hedBg;
+  }
+  @media screen and (min-width:700px) {
+    height: auto;
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    &__primary {
+      display: flex;
+      flex-flow:row wrap;
+      align-items: baseline;
+      justify-content: flex-end;
+      order:1; 
+    }
+    &__secondary {}
+    }
+  @media screen and (min-width:700px) and (max-width:960px) {
+  }
+  @media screen and (min-width:960px) {
+  }
+}
+@mixin hed02 {
+  flex-flow:column nowrap;
+  align-items: flex-end;
+  &__primary {
+    .visible & {
+      display: flex;
+      flex-flow:column nowrap;
+      justify-content: center;
+      align-items: center;
+      background:$hedBg;
+    }
+  }
+  @media screen and (max-width:700px) {  
+    &.visible {
+      height:auto;
+    }
+    &__primary {
+      .visible & {
+        position:absolute;
+        top:64px;
+        left:0;
+        right:0;
+        bottom:0;
+        padding-bottom: 30vh;
+        background:$hedBg;
+      }
+    }
+    &__secondary {
+      .visible & {
+        position: absolute;
+        bottom:0;
+        left:0;
+        right:0;
+        height: 30vh;
+        z-index: 1;
+      }
+    }
+  }  
+  @media screen and (min-width:700px) {
+    height: auto;
+    overflow: hidden;
+    &.visible {
+      overflow: visible;
+    }
+    &__primary {
+      position: absolute;
+      height:0;
+      overflow: hidden;
+      left:0;
+      right:0;
+    }
+    &__secondary {
+      height:100%;
+    }
+    }
+  @media screen and (min-width:700px) and (max-width:960px) {
+    &__primary {
+      top:112px;
+      .visible & {
+        height: calc(100vh - 112px);
+      }
+    }
+  }
+  @media screen and (min-width:960px) {
+    &__primary {
+      top:112px;
+      .visible & {
+        height: calc(100vh - 112px);
+      }
+    }
+  }
+
+}
+@mixin hed03 {
+  flex-flow:column nowrap;
+  align-items: flex-end;
+  &__primary {
+    .visible & {
+      background: $hedBg;
+      display: flex;
+      flex-flow:column nowrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  @media screen and (max-width:700px) {  
+    &.visible {
+      height:auto;
+    }
+    &__primary {
+      .visible & {
+        position:absolute;
+        top:74px;
+        left:0;
+        right:0;
+        bottom:0;
+        padding-bottom: 30vh;
+      }
+    }
+    &__secondary {
+      .visible & {
+        position: absolute;
+        bottom:0;
+        left:0;
+        right:0;
+        height: 30vh;
+        z-index: 1;
+      }
+    }
+  }  
+  @media screen and (min-width:700px) {
+    height: auto;
+    overflow: hidden;
+    &.visible {
+      overflow: visible;
+    }
+    &__primary {
+      position: absolute;
+      height:0;
+      overflow: hidden;
+      left:0;
+      right:0;
+    }
+    &__secondary {
+      height:100%;
+    }
+    }
+  @media screen and (min-width:700px) and (max-width:960px) {
+    &__primary {
+      top:112px;
+      .visible & {
+        height: calc(100vh - 112px);
+      }
+    }
+  }
+  @media screen and (min-width:960px) {
+    &__primary {
+      top:118px;
+      .visible & {
+        height: calc(100vh - 118px);
+      }
+    }
+  }
+}
+@mixin hed04 {
+  flex-flow:column wrap;
+  align-items: center;
+  &.visible {
+    height:auto;
+    min-height:100vh;
+    position: absolute;
+    left:0;
+    right: 0;
+    background:white;
+  }
+  @media screen and (min-width:700px) {
+    height: auto;
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    &__primary {
+      display: flex;
+      flex-flow:row wrap;
+      align-items: baseline;
+      justify-content: flex-start;
+      order:1; 
+    }
+    &__secondary {}
+    }
+  @media screen and (min-width:700px) and (max-width:960px) {
+  }
+  @media screen and (min-width:960px) {
+  }
+}
+@mixin hed05 {
+  flex-flow:column nowrap;
+  align-items: flex-end;
+  &__primary {
+    .visible & {
+      background: $hedBg;
+      display: flex;
+      flex-flow:column nowrap;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+  @media screen and (max-width:700px) {  
+    &.visible {
+      height:auto;
+    }
+    &__primary {
+      .visible & {
+        position:absolute;
+        top:74px;
+        left:0;
+        right:0;
+        bottom:0;
+        padding-bottom: 30vh;
+      }
+    }
+    &__secondary {
+      .visible & {
+        position: absolute;
+        bottom:0;
+        left:0;
+        right:0;
+        height: 30vh;
+        z-index: 1;
+      }
+    }
+  }  
+  @media screen and (min-width:700px) {
+    height: auto;
+    overflow: hidden;
+    &.visible {
+      overflow: visible;
+    }
+    &__primary {
+      position: absolute;
+      height:0;
+      overflow: hidden;
+      left:0;
+      right:0;
+    }
+    &__secondary {
+      height:100%;
+    }
+    }
+  @media screen and (min-width:700px) and (max-width:960px) {
+    &__primary {
+      top:112px;
+      .visible & {
+        height: calc(100vh - 112px);
+      }
+    }
+  }
+  @media screen and (min-width:960px) {
+    &__primary {
+      top:118px;
+      .visible & {
+        height: calc(100vh - 118px);
+      }
+    }
+  }
+
+}
+@mixin hed06 {
+  flex-flow:column nowrap;
+  align-items: flex-end;
+  &__primary {
+    .visible & {
+      background: $hedBg;
+      display: flex;
+      flex-flow:column nowrap;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+  @media screen and (max-width:700px) {  
+    &.visible {
+      height:auto;
+    }
+    &__primary {
+      .visible & {
+        position:absolute;
+        top:74px;
+        left:0;
+        right:0;
+        bottom:0;
+        padding-bottom: 30vh;
+      }
+    }
+    &__secondary {
+      .visible & {
+        position: absolute;
+        bottom:0;
+        left:0;
+        right:0;
+        height: 30vh;
+        z-index: 1;
+      }
+    }
+  }  
+  @media screen and (min-width:700px) {
+    height: auto;
+    overflow: hidden;
+    &.visible {
+      overflow: visible;
+    }
+    &__primary {
+      position: absolute;
+      height:0;
+      overflow: hidden;
+      left:0;
+      right:0;
+    }
+    &__secondary {
+      height:100%;
+    }
+    }
+  @media screen and (min-width:700px) and (max-width:960px) {
+    &__primary {
+      top:112px;
+      .visible & {
+        height: calc(100vh - 112px);
+      }
+    }
+  }
+  @media screen and (min-width:960px) {
+    &__primary {
+      top:118px;
+      .visible & {
+        height: calc(100vh - 118px);
+      }
+    }
+  }
+
+}
+@mixin hed07 {
+  flex-flow:column-reverse nowrap;
+  align-items: flex-end;
+  &__primary {
+    .visible & {
+      background: $hedBg;
+      display: flex;
+      flex-flow:column nowrap;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+  @media screen and (max-width:700px) {  
+    &.visible {
+      height:auto;
+    }
+    &__primary {
+      .visible & {
+        position:absolute;
+        top:74px;
+        left:0;
+        right:0;
+        bottom:0;
+        padding-bottom: 30vh;
+      }
+    }
+    &__secondary {
+      .visible & {
+        position: absolute;
+        bottom:0;
+        left:0;
+        right:0;
+        height: 30vh;
+        z-index: 1;
+      }
+    }
+  }  
+  @media screen and (min-width:700px) {
+    height: auto;
+    overflow: hidden;
+    &.visible {
+      overflow: visible;
+    }
+    &__primary {
+      position: absolute;
+      height:0;
+      overflow: hidden;
+      left:0;
+      right:0;
+    }
+    &__secondary {
+      height:100%;
+    }
+    }
+  @media screen and (min-width:700px) and (max-width:960px) {
+    &__primary {
+      top:112px;
+      .visible & {
+        height: calc(100vh - 112px);
+      }
+    }
+  }
+  @media screen and (min-width:960px) {
+    &__primary {
+      top:118px;
+      .visible & {
+        height: calc(100vh - 118px);
+      }
+    }
+  }
+
+}
+@mixin hed08 {
+  flex-flow:column nowrap;
+  align-items: flex-start;
+  &__primary {
+    .visible & {
+      background: $hedBg;
+      display: flex;
+      flex-flow:column nowrap;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+  @media screen and (max-width:700px) {  
+    &.visible {
+      height:auto;
+    }
+    &__primary {
+      .visible & {
+        position:absolute;
+        top:74px;
+        left:0;
+        right:0;
+        bottom:0;
+        padding-bottom: 30vh;
+      }
+    }
+    &__secondary {
+      .visible & {
+        position: absolute;
+        bottom:0;
+        left:0;
+        right:0;
+        height: 30vh;
+        z-index: 1;
+      }
+    }
+  }  
+  @media screen and (min-width:700px) {
+    height: auto;
+    overflow: hidden;
+    &.visible {
+      overflow: visible;
+    }
+    &__primary {
+      position: absolute;
+      height:0;
+      overflow: hidden;
+      left:0;
+      right:0;
+    }
+    &__secondary {
+      height:100%;
+    }
+    }
+  @media screen and (min-width:700px) and (max-width:960px) {
+    &__primary {
+      top:112px;
+      .visible & {
+        height: calc(100vh - 112px);
+      }
+    }
+  }
+  @media screen and (min-width:960px) {
+    &__primary {
+      top:118px;
+      .visible & {
+        height: calc(100vh - 118px);
+      }
+    }
+  }
+
+}
+@mixin hed09 {
+  flex-flow:column-reverse nowrap;
+  align-items: flex-start;
+  &__primary {
+    .visible & {
+      background: $hedBg;
+      display: flex;
+      flex-flow:column nowrap;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+  @media screen and (max-width:700px) {  
+    &.visible {
+      height:auto;
+    }
+    &__primary {
+      .visible & {
+        position:absolute;
+        top:74px;
+        left:0;
+        right:0;
+        bottom:0;
+        padding-bottom: 30vh;
+      }
+    }
+    &__secondary {
+      .visible & {
+        position: absolute;
+        bottom:0;
+        left:0;
+        right:0;
+        height: 30vh;
+        z-index: 1;
+      }
+    }
+  }  
+  @media screen and (min-width:700px) {
+    height: auto;
+    overflow: hidden;
+    &.visible {
+      overflow: visible;
+    }
+    &__primary {
+      position: absolute;
+      height:0;
+      overflow: hidden;
+      left:0;
+      right:0;
+    }
+    &__secondary {
+      height:100%;
+    }
+    }
+  @media screen and (min-width:700px) and (max-width:960px) {
+    &__primary {
+      top:112px;
+      .visible & {
+        height: calc(100vh - 112px);
+      }
+    }
+  }
+  @media screen and (min-width:960px) {
+    &__primary {
+      top:118px;
+      .visible & {
+        height: calc(100vh - 118px);
+      }
+    }
+  }
+
+}

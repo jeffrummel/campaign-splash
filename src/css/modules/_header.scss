@@ -1,0 +1,19 @@
+@import "../layouts/headers/index";
+@import "../helpers/mixins";
+
+.hed {
+  @include hed01;
+  padding:12px 0;
+  color:$hedColor;
+  &__logo {
+    &--grfx {
+      width:100%;
+    }
+  }
+  &__menu {
+    background: transparent;
+    &--icon {
+      fill:$hedIcon;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import "../layouts/marquees/index";
+@import "../helpers/mixins";
+
+.marq {
+  grid-column: 2 / span 1;
+  // grid-row:2 / span 1;
+  @media screen and (min-width:700px) {
+    padding:64px 0;
+  }
+  @include marq01;
+  a {
+    &:link,
+    &:visited {
+      color:$marqLink;
+    }
+    &:hover {
+      color:$marqLinkHover;
+    }
+  }
+  &__hed {
+    color:whitesmoke;
+    margin:8px 0;
+    @extend %marqHed;
+  }
+  &__dek {
+    color:whitesmoke;
+    margin:8px 0;
+    max-width: 500px;
+    @extend %marqDek;
+  }
+  &__form {
+    color:whitesmoke;
+    margin:8px -12px;
+
+  }
+}

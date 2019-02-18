@@ -1,0 +1,114 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='description' content='')
+    meta(name='author' content='jeffrummel')
+    meta(name='HandheldFriendly' content='True')
+    meta(name='MobileOptimized' content='320')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1')
+    meta(name='mobile-web-app-capable' content='no')
+    meta(name='apple-mobile-web-app-capable' content='no')
+
+    link(rel='stylesheet' href='/css/main.css')
+    link(rel='stylesheet' href='/css/fonts.css')
+
+    include /fonts.html
+
+    link(rel='shortcut icon', href='/favicon.ico', type='image/x-icon')
+    link(rel='apple-touch-icon', href='/img/apple-touch-icon.png')
+    //- link(rel='apple-touch-icon', sizes='57x57', href='/img/apple-touch-icon-57x57.png')
+    //- link(rel='apple-touch-icon', sizes='72x72', href='/img/apple-touch-icon-72x72.png')
+    //- link(rel='apple-touch-icon', sizes='76x76', href='/img/apple-touch-icon-76x76.png')
+    //- link(rel='apple-touch-icon', sizes='114x114', href='/img/apple-touch-icon-114x114.png')
+    //- link(rel='apple-touch-icon', sizes='120x120', href='/img/apple-touch-icon-120x120.png')
+    //- link(rel='apple-touch-icon', sizes='144x144', href='/img/apple-touch-icon-144x144.png')
+    //- link(rel='apple-touch-icon', sizes='152x152', href='/img/apple-touch-icon-152x152.png')
+    //- link(rel='apple-touch-icon', sizes='180x180', href='/apple-touch-icon-180x180.png')
+
+    //- link(rel='icon', type='image/png', sizes='32x32', href='/img/favicon-32x32.png')
+    //- link(rel='icon', type='image/png', sizes='16x16', href='/img/favicon-16x16.png')
+    //- link(rel='manifest', href='/site.webmanifest')
+    //- link(rel='mask-icon', href='/img/safari-pinned-tab.svg', color='#5bbad5')
+    //- link(rel='shortcut icon', href='/img/favicon.ico')
+    //- meta(name='msapplication-TileColor', content='#603cba')
+    //- meta(name='msapplication-config', content='/img/browserconfig.xml')
+    //- meta(name='theme-color', content='#ffffff')
+
+
+    //- script(src='https://www.googletagmanager.com/gtag/js?id=[GA_TAG]' async)
+    //- script
+    //-   |  window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', '[GA_TAG]');
+  body.dest
+    header.dest__hed.hed
+      h1.hed__logo 
+        span.hed__logo--title siteName
+        include ./__logo.svg
+      button.hed__menu
+        span.hed__menu--text Show Menu
+        include ./__menu.svg
+      nav.hed__nav.nav
+        ul.nav__primary
+          li.nav__primary--item
+            a.nav__primary--link(href="#") About
+          //- li.nav__primary--item
+          //-   a.nav__primary--link(href="#") Events
+          //- li.nav__primary--item
+          //-   a.nav__primary--link(href="#") Issues
+          li.nav__primary--item
+            a.nav__primary--link(href="#") Volunteer
+          li.nav__primary--item
+            a.nav__primary--action(href="#") Donate
+        ul.nav__secondary
+          li.nav__secondary--item
+            a.nav__secondary--link(href="#") 
+              span.nav__secondary--text Facebook
+              include ./__facebook.svg
+          li.nav__secondary--item
+            a.nav__secondary--link(href="#") 
+              span.nav__secondary--text Twitter
+              include ./__twitter.svg
+          li.nav__secondary--item
+            a.nav__secondary--link(href="#") 
+              span.nav__secondary--text Instagram
+              include ./__instagram.svg
+          li.nav__secondary--item
+            a.nav__secondary--link(href="#") 
+              span.nav__secondary--text YouTube
+              include ./__youtube.svg
+          li.nav__secondary--item
+            a.nav__secondary--link(href="#") 
+              span.nav__secondary--text Snapchat
+              include ./__snapchat.svg
+          
+
+    section.dest__marq.marq
+      header.marq__hed
+        h2.marq__hed--title !{title}
+      div.marq__dek !{content}
+      form.marq__form.form
+        p.form__set
+          label.form__set--label(for='name') First Name
+          input.form__set--input(id='name' type="text" placeholder='First Name')
+        p.form__set
+          label.form__set--label(for='lastName') Last Name
+          input.form__set--input(id='lastName' type="text" placeholder='Last Name')
+        p.form__set
+          label.form__set--label(for='zip') Zip Code
+          input.form__set--input(id='zip' type="text" placeholder='Zip Code')
+        p.form__set
+          label.form__set--label(for='phone') Mobile Phone
+          input.form__set--input(id='phone' type="tel" placeholder='Mobile Phone')
+        p.form__set
+          label.form__set--label(for='email') Email Address
+          input.form__set--input(id='email' type="text" placeholder='Email Address')
+        input.form--action(type="submit" value='I\'m In')
+    .dest__grfx
+      img.dest__grfx(src='/img/artem-bali-777922-unsplash.jpg')
+
+    footer.dest__foot.foot
+      p.foot--credit Paid For By Organization Name
+      p.foot--terms Organization and Organization Name do not support or oppose any candidate for public office. We are a non-partisan advocacy that works to empower all citizens. We may deliver petitions and surveys to elected officials. We request your address so we can deliver your message to the appropriate office, and may include in these deliveries information such as your name, town or city and state. We take your privacy seriously — <a href="#">privacy policy</a>.
+
+    script(src='/js/main.js' async)

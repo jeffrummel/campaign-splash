@@ -1,0 +1,214 @@
+@mixin baseHed {
+  display: flex;
+  &__logo {
+    z-index:1;
+    &--title {
+      @extend %clipIt;
+    }
+    &--grfx {
+
+    }
+  }
+  &__menu {
+    z-index:1;
+    cursor:pointer;
+    &--text {
+      @extend %clipIt;
+    }
+    &--icon {
+      width:42px;
+    }
+  }
+  &__nav {
+    z-index:0;
+    &.primary {}
+    &.secondary {}
+  }
+  @media screen and (max-width:700px) {
+    &__logo {
+      max-width: 158px;
+    }
+  }
+  @media screen and (min-width:700px) and (max-width:960px) {
+    &__logo {
+      max-width:265px;
+    }
+  }
+  @media screen and (min-width:960px) {
+    &__logo {
+      max-width:305px;
+    }
+  }
+}
+@mixin logoLeft {
+  @include baseHed;
+  flex-flow:row wrap;
+  justify-content:space-between;
+  align-items: stretch;
+  &__logo {
+    margin-right: 16px;
+  }
+}
+@mixin logoCenter {
+  @include baseHed;
+  flex-flow:row wrap;
+  justify-content:center;
+  align-items: center;
+}
+@mixin logoRight {
+  @include baseHed;
+  flex-flow:row-reverse wrap;
+  justify-content:space-between;
+  align-items: stretch;
+}
+@mixin hed01 {
+  @include logoLeft;
+  &__menu {
+    flex:0 1 auto;
+  }
+  &__nav {
+    flex:0 0 100%;
+    order:-1;
+    justify-self:flex-end;
+    &.primary {}
+    &.secondary {}
+  }
+  @media screen and (min-width:700px) {
+    &__menu {
+      display:none;
+    }
+    &__nav {
+      order:0;
+      flex:1 1 50%;
+    }
+  }
+}
+@mixin hed02 {
+  @include logoCenter;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  &__menu {
+    order:-1;
+    flex:1 0 30%;
+    text-align:left;
+  }
+  &__nav {
+    flex:1 0 30%;
+  }
+}
+@mixin hed03 {
+  @include logoLeft;
+  &__menu {
+    flex:0 1 auto;
+  }
+  &__nav {
+    flex:0 0 100%;
+    order:-1;
+    justify-self:flex-end;
+    &.primary {}
+    &.secondary {}
+  }
+  @media screen and (min-width:700px) {
+    &__menu {
+      // display:none;
+    }
+    &__nav {
+      order:0;
+      flex:1 1 34%;
+    }
+  }
+}
+@mixin hed04 {
+  @include logoRight;
+  &__menu {
+    flex:0 1 auto;
+  }
+  &__nav {
+    flex:0 0 100%;
+    order:-1;
+    justify-self:flex-end;
+    &.primary {}
+    &.secondary {}
+  }
+  @media screen and (min-width:700px) {
+    &__menu {
+      display:none;
+    }
+    &__nav {
+      order:0;
+      flex:1 1 50%;
+    }
+  }
+}
+@mixin hed05 {
+  @include logoLeft;
+  &__menu {
+    flex:0 0 auto;
+  }
+  &__nav {
+    flex:1 1 40%;
+  }
+}
+@mixin hed06 {
+  @include logoLeft;
+  &__menu {
+    order:1;
+    flex:0 0 auto;
+  }
+  &__nav {
+    margin:0 16px;
+    flex:1 1 10%;
+  }
+}
+@mixin hed07 {
+  @include logoRight;
+  &__menu {
+    flex:0 1 auto;
+    margin:0 16px;
+  }
+  &__nav {
+    flex:0 0 100%;
+    justify-self:flex-end;
+    &.primary {}
+    &.secondary {}
+  }
+  @media screen and (min-width:700px) {
+    &__menu {
+      order:1;
+    }
+    &__nav {
+      margin:0 16px;
+      flex:1 1 50%;
+    }
+  }
+}
+@mixin hed08 {
+  @include logoCenter;
+  &__menu {
+    flex:1 0 25%;
+    text-align:right;
+  }
+  &__nav {
+    order:-1;
+    flex:1 0 25%;
+  }
+}
+@mixin hed09 {
+  @include logoRight;
+  &__menu {
+    flex:0 1 auto;
+    margin:0 16px;
+  }
+  &__nav {
+    flex:0 0 100%;
+    justify-self:flex-start;
+    &.primary {}
+    &.secondary {}
+  }
+  @media screen and (min-width:700px) {
+    &__nav {
+      order:0;
+      flex:1 1 50%;
+    }
+  }
+}

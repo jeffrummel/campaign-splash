@@ -1,0 +1,26 @@
+.hed {
+  display: flex;
+  flex-flow:row nowrap;
+  justify-items:flex-start;
+  &__logo {
+    max-width: 158px;
+    &--title {
+      @util hide-visually;
+    }
+    &--grfx {
+
+    }
+  }
+  &__nav {
+    flex:0 1 100%;
+    justify-self:flex-end;
+    outline:1px dotted salmon;
+    &.primary {}
+    &.secondary {}
+  }
+  @media screen and (min-width:960px) {
+    &__logo {
+      max-width:305px;
+    }
+  }
+}

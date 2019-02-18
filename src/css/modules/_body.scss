@@ -1,0 +1,68 @@
+.dest {
+  display: -ms-grid;
+  display:grid;
+  justify-content:center;
+  @media screen and (max-width:700px) {
+    -ms-grid-columns: 12px auto 12px;
+    grid-template-columns: 12px minmax(280px, 680px) 12px;
+  }
+  @media screen and (min-width:700px) and (max-width:960px) {
+    -ms-grid-columns: 12px auto 12px;
+    grid-template-columns: 1fr repeat(8, minmax(66px, 120px)) 1fr;
+    grid-column-gap:16px;
+  }
+  @media screen and (min-width:960px) {
+    grid-template-columns:1fr repeat(12, minmax(42px, 78px)) 1fr;
+    grid-column-gap:36px;
+  }
+  &:before {
+    content:'';
+    grid-row:1;
+    grid-column:1 / span -1;
+    background: $hedBg;
+    align-self: stretch;
+    justify-self:stretch; 
+  }
+  &__hed {
+    grid-column:2;
+    grid-row:1;
+    @media screen and (min-width:700px) and (max-width:960px) {
+      grid-column:2 / span 8;
+    }
+    @media screen and (min-width:960px) {
+      grid-column:2 / span 12;
+    }   
+  }
+  &__marq {
+    min-height:70vh;
+    grid-row:3;    
+    @media screen and (min-width:700px) {
+      grid-row:2;    
+    }
+  }
+  @import "../blocks/dest-grfx";
+  &__foot {
+    grid-column: 2 / span 1;
+    @media screen and (min-width:700px) and (max-width:960px) {
+      grid-column:2 / span 8;
+    }
+    @media screen and (min-width:960px) {
+      grid-column:2 / span 12;
+    }   
+  }
+  @import "../layouts/backgrounds/index";
+  &::after {
+    z-index: -1;
+    content:'';
+    grid-row:3;
+    grid-column: 1 / span 3;
+    background:$marqBgM;
+    align-self: stretch;
+    justify-self:stretch; 
+    @media screen and (min-width:700px) {
+      background:$marqBg;
+      grid-row:2;
+    }
+    @include marq01;
+  }
+}

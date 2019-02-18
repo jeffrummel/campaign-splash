@@ -1,0 +1,61 @@
+%marqHed {
+  font-size: 32px;
+  line-height:1.2;
+  font-family:"Arthura-Black", Helvetica, sans-serif;
+  @media screen and (min-width:760px) and (max-width:960px) {
+    font-size: 48px;
+
+  }
+  @media screen and (min-width:960px) {
+    font-size: 62px;
+
+  }
+}
+%marqDek {
+  font-size: 16px;
+  line-height:1.4;
+  font-family:"Arthura-Regular", Helvetica, sans-serif;
+  @media screen and (min-width:960px) {
+    font-size: 18px;
+  }
+}
+%marqLabel {
+  font-size: 16px;
+  line-height:1.4;
+  font-family:"Arthura-Regular", Helvetica, sans-serif;
+  @media screen and (min-width:960px) {
+    font-size: 14px;
+  }
+}
+%marqInput {
+  font-size: 16px;
+  line-height:1;
+  font-family:"Arthura-Regular", Helvetica, sans-serif;
+  @media screen and (min-width:960px) {
+    font-size: 18px;
+  }
+}
+%marqCta {
+  font-size: 16px;
+  line-height:1;
+  font-family:"Arthura-BlackItalic", Helvetica, sans-serif;
+  @media screen and (min-width:960px) {
+    font-size: 18px;
+  }
+}
+%navItem {
+  font-size: 14px;
+  line-height:1.4;
+  font-family:"Arthura-BoldItalic", Helvetica, sans-serif;
+  @media screen and (min-width:960px) {
+    font-size: 18px;
+  }
+}
+%footCredit {
+  font-size: 12px;
+  line-height:1.3;
+  font-family:"Arthura-Regular", Helvetica, sans-serif;
+  @media screen and (min-width:960px) {
+    font-size: 10px;
+  }
+}

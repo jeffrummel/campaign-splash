@@ -1,0 +1,11 @@
+@import "../layouts/forms/index";
+.form {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  width:100%;
+  max-width: 500px;
+  @include form00;
+  @include form01;
+}

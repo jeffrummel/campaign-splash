@@ -1,0 +1,85 @@
+@import "../layouts/navigation/index";
+.nav {
+  display:flex;
+  justify-content: space-evenly;
+  height:0;
+  overflow:hidden;
+  @include hed01;
+  &__primary {
+    &--item {
+      margin:12px 2px;
+      text-align: center;
+      @media screen and (min-width:700px) {
+        margin:2px 2px;
+      }
+    }
+    &--link {
+      padding:6px;
+      @extend %navItem;
+      text-transform: uppercase;
+      text-decoration:none;
+      color:$hedLink;
+      &:hover {
+        color:$hedLinkHover;
+      }
+      @media screen and (min-width:960px) {
+        padding:6px 12px;
+      }
+    }
+    &--action {
+      padding:8px 14px 6px 12px;
+      @extend %navItem;
+      text-transform: uppercase;
+      text-decoration:none;
+      background: $ctaBg;
+      color: $ctaColor;
+      border-radius: 3px;
+      @media screen and (min-width:960px) {
+        padding:8px 22px 6px 21px;
+      }
+    }
+  }
+  &__secondary {
+    display: flex;
+    flex-flow:row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin:0 -6px;
+    &--item {
+      margin:0 6px;
+    }
+    &--link {
+      box-sizing: border-box;
+      display: block;
+      width:36px;
+      height: 36px;
+      padding:8px;
+      background:$hedIcon;
+      border-radius:50%;
+    }
+    &--text {
+      @extend %clipIt;
+    }
+    &--icon {
+      fill: $hedFill;
+    }
+  }
+  @media screen and (min-width:700px) {
+    &.visible {
+      height:auto;
+      min-height:auto;
+    }
+  }
+  @media screen and (min-width:960px) {
+    /* &__primary, */
+    &__secondary {
+      display:flex;
+      flex-flow:row nowrap;
+      align-itmes:center;
+      justify-content:flex-end;
+    }
+    &__secondary {
+      order:-1;
+    }
+  }
+}
