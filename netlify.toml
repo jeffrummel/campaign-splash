@@ -1,0 +1,6 @@
+[build]
+  command = "gulp build:production"
+  publish = "public"
+
+[context.deploy-preview]
+  command = "gulp build:production"
